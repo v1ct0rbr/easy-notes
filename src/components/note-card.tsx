@@ -2,7 +2,6 @@ import * as Dialog from "@radix-ui/react-dialog"
 import { formatDistanceToNow } from "date-fns"
 import { X } from "lucide-react"
 import { currentLocale } from "../utils/constantes"
-import { useRef } from "react"
 
 interface NoteCardProps {
     note: {
@@ -16,8 +15,7 @@ interface NoteCardProps {
 
 export function NoteCard({ note, handleDeleteNote }: NoteCardProps) {
 
-    const deleteButton = useRef<HTMLButtonElement>(null)
-
+  
   
     return (
         // classes teste inline-flex flex-initial flex-col
