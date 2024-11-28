@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from './assets/logo-nlw.svg'
+import logo from './assets/logo-min.svg'
 import { NewNoteCard } from './components/new-note-card'
 import { NoteCard } from './components/note-card'
 
@@ -49,7 +49,8 @@ export function App() {
 
   return (
     <div className="m-auto max-w-6xl my-10 space-y-6 px-5">
-      <img src={logo} alt="nlw alternativo" />
+      
+      <img src={logo} alt="nlw alternativo" className='h-10' />
       <form className='w-full'>
         <input
           type="text"
@@ -74,6 +75,9 @@ export function App() {
 
 
         }
+      </div>
+      <div >
+        <p className='text-center text-slate-500 text-sm'>Criado por <a href="https://victorqueiroga.com" className='text-slate-500 hover:text-slate-600'>Victor Queiroga</a></p>
       </div>
     </div>
   )
